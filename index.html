@@ -602,7 +602,7 @@
 
     <!-- #region popup -->
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="popup-review">
         <button class="close-popup">
           <svg width="8" height="8">
@@ -646,7 +646,7 @@
               </span>
             </label>
           </div>
-          <label
+          <label class="label-field"
             >Comment
             <textarea
               class="comment-field"
@@ -655,6 +655,15 @@
               placeholder="Text input"
             ></textarea>
           </label>
+          <label class="checkbox-terms"
+            ><input type="checkbox" name="user-terms" required /><span
+              class="text-term"
+            >
+              I accept the terms and conditions of the
+            </span>
+            <a href="#" class="link-terms">Privacy Policy</a>
+          </label>
+          <button type="submit" class="form-submit-btn">Send</button>
         </form>
       </div>
     </div>
