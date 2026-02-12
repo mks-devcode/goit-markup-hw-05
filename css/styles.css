@@ -558,17 +558,23 @@ img {
 /* region popup */
 
 .backdrop {
-  pointer-events: none;
+  position: fixed;
+  z-index: 999;
   background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
-  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hide-popup {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
 }
 
 .is-open {
@@ -580,6 +586,8 @@ img {
   position: relative;
   width: 408px;
   height: 80%;
+  max-height: 584px;
+  overflow: auto;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow:
@@ -644,6 +652,10 @@ img {
   margin-bottom: 8px;
 }
 
+.label-field.comment-label {
+  margin-bottom: 0;
+}
+
 .field-wrapper-inner {
   position: relative;
   margin-top: 4px;
@@ -702,6 +714,8 @@ img {
 }
 
 .checkbox-terms {
+  display: flex;
+  align-items: center;
   width: 360px;
   height: 16px;
   margin: 0 24px 24px 24px;
@@ -725,7 +739,35 @@ img {
   cursor: pointer;
 }
 
+.custom-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  fill: none;
+  margin-right: 8px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-checkbox:focus + .custom-checkbox {
+  border-radius: 2px;
+  border: 1px solid #404bbf;
+}
+
+.input-checkbox:checked + .custom-checkbox .check-icon {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+  background-color: #404bbf;
+  border-radius: 2px;
+  border: 1px solid #404bbf;
+}
+
 .form-submit-btn {
+  display: block;
   border: none;
   cursor: pointer;
   border-radius: 4px;
@@ -746,4 +788,5 @@ img {
 .form-submit-btn:hover,
 .form-submit-btn:focus {
   background-color: #404bbf;
+  outline: none;
 }
