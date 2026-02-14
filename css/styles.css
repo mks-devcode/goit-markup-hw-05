@@ -765,7 +765,7 @@ img {
   border: 1px solid #404bbf;
 }
 
-.input-checkbox:checked + .custom-checkbox .check-icon {
+.input-checkbox:checked + .custom-checkbox {
   width: 16px;
   height: 16px;
   fill: #f4f4fd;
