@@ -432,7 +432,7 @@ img {
   color: #f4f4fd;
 }
 
-.footer p {
+.text-logo-footer {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -480,14 +480,19 @@ img {
   position: relative;
 }
 
-.label-field-footer {
-  width: 453px;
-  height: 80px;
+.text-subscribe-field {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
+}
+
+.label-field-footer {
+  width: 453px;
+  height: 80px;
+
   display: flex;
   flex-direction: column;
   gap: 16px;
