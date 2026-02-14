@@ -576,9 +576,9 @@
           </ul>
         </div>
         <div class="box-subscribe-footer">
+          <p class="text-subscribe-field">Subscribe</p>
           <form>
             <div class="subscribe-field">
-              <p class="text-subscribe-field">Subscribe</p>
               <label class="label-field-footer">
                 <input
                   class="text-field-footer"
@@ -587,13 +587,14 @@
                   placeholder="E-mail"
                 />
               </label>
+
+              <button type="submit" class="subscribe-btn">
+                Subscribe
+                <svg class="icon-subscribe" width="24" height="24">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </button>
             </div>
-            <button type="submit" class="subscribe-btn">
-              Subscribe
-              <svg class="icon-subscribe" width="24" height="24">
-                <use href="./images/icons.svg#icon-subscribe"></use>
-              </svg>
-            </button>
           </form>
         </div>
       </div>
@@ -602,7 +603,7 @@
 
     <!-- #region popup -->
 
-    <div class="backdrop hide-popup">
+    <div class="backdrop">
       <!-- hide-popup is-open-->
       <div class="popup-review">
         <button class="close-popup">
@@ -619,7 +620,7 @@
               >Name
               <span class="field-wrapper-inner">
                 <input class="text-field" type="text" name="user-name" />
-                <svg class="form-icon" width="18" height="18">
+                <svg class="form-icon" width="18" height="24">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </span>
