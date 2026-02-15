@@ -527,11 +527,14 @@ img {
 }
 
 .subscribe-btn {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  padding: 8px 64px 8px 24px;
+  padding: 8px 24px;
   color: #fff;
   background-color: #4d5ae5;
   font-weight: 500;
@@ -548,9 +551,6 @@ img {
 
 .icon-subscribe {
   fill: #fff;
-  position: absolute;
-  top: 8px;
-  right: 24px;
 }
 
 /* region popup */
