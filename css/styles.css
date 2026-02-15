@@ -467,6 +467,7 @@ img {
 
 .box-footer {
   display: flex;
+  align-items: baseline;
 }
 
 .icon-link-footer:hover,
@@ -477,6 +478,7 @@ img {
 .box-subscribe-footer {
   max-width: 453px;
   height: 80px;
+  margin-left: auto;
 }
 
 .text-subscribe-field {
